@@ -1,2 +1,2 @@
-# Otomotiv-Programlama-VERİ-GÖRSELLEŞTİRME
+# Otomotiv-Programlama-
 <!-- test1 -->
