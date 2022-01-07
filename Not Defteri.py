@@ -11,20 +11,43 @@ def yazı_silme():
 
 # pencerenin özellikleri:
 pencere = Tk()
-pencere.geometry('350x400+350+200')
 pencere.title('Yapılacaklar Listem')
 pencere.config(bg='#cccccc')
-pencere.resizable(width=False, height=False)
+pencere.geometry('500x500+500+500')
 frame = Frame(pencere)
 frame.pack(pady=10)
 
+# butonların özellikleri:
+button_frame = Frame(pencere)
+button_frame.pack(pady=20)
+ekleme_butonu = Button(
+    button_frame,
+    text='Listeye Ekle',
+    font=('times 10'),
+    bg='#E6DDC4',
+    padx=40,
+    pady=5,
+    command=yazı_ekleme)
+
+ekleme_butonu.pack(fill=BOTH,expand=True, side=LEFT)
+
+silme_butonu = Button(
+    button_frame,
+    text='Listeden Sil',
+    font=('times 10'),
+    bg='#F5F5F5',
+    padx=40,
+    pady=5,
+    command=yazı_silme)
+
+silme_butonu.pack(fill=BOTH,expand=True, side=LEFT)
 # liste kutusu özellikleri:
 lb = Listbox(
     frame,
-    width=25,
-    height=8,
+    width=35,
+    height=10,
     font=('Times', 18),
-    bd=0,
+    bd=2,
     fg='#0c1404',
     highlightthickness=0,
     selectbackground='#7f7f7f',
@@ -50,35 +73,10 @@ sb.config(command=lb.yview)
 
 eklenenler = Entry(
     pencere,
-    font=('times', 24))
+    font=('times', 20))
 
 eklenenler.pack(pady=20)
 
-button_frame = Frame(pencere)
-button_frame.pack(pady=20)
-
-# butonların özellikleri:
-ekleme_butonu = Button(
-    button_frame,
-    text='Listeye Ekle',
-    font=('times 14'),
-    bg='#c5f776',
-    padx=20,
-    pady=10,
-    command=yazı_ekleme)
-
-ekleme_butonu.pack(fill=BOTH, expand=True, side=LEFT)
-
-silme_butonu = Button(
-    button_frame,
-    text='Listeden Sil',
-    font=('times 14'),
-    bg='#ff8b61',
-    padx=20,
-    pady=10,
-    command=yazı_silme)
-
-silme_butonu.pack(fill=BOTH, expand=True, side=LEFT)
 
 
 pencere.mainloop()
