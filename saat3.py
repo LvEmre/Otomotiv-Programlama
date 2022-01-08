@@ -1,57 +1,50 @@
-from tkinter import Label, Tk
+from tkinter import *
+from tkinter import messagebox
+from tkinter import font
 
-import time
+pencere=Tk()
 
-app_window = Tk()
+pencere.title("SarkanSepet")
+pencere.geometry("500x500")
 
+uygulama=Frame(pencere)
+uygulama.grid()
 
-
-app_window.title("Dijital Saat")
-app_window.geometry("400x150")
-app_window.resizable(0,0)
-
-
-clock3=int(time.strftime("%H"))
-
-while (clock3>6 and clock3<18):
-    text_font= ("Boulder", 68, 'bold')
-    background = 'white'
-    foreground= 'black'
-    border_width = 25
-
+lahmacun=49.90
+cantık=22.90
+pizza=58
+mantı=31.69
+wellington=2999.99
+toplam=0
     
-    label = Label(app_window, font=text_font, bg=background, fg=foreground, bd=border_width)
+def heasp():
+    var=messagebox.showinfo("Sepet", "Sepete Eklendi")
     
-    label.grid(row=0, column=1)
-
-    def digital_clock():
-        time_live = time.strftime("%H:%M:%S")
-        label.config(text=time_live)
-        label.after(200, digital_clock)
-
-    digital_clock()
+def sepet():
+    var=messagebox.showinfo("Sipariş", "Siparişiniz Alındı")
     
-    app_window.mainloop()
     
+button_background='wheat'
+text_font=("Boulder", 10, 'bold')
+lastbutton_background='indian red'
+lastbutton_textfont=("Boulder", 20, 'bold')
 
-text_font= ("Boulder", 68, 'bold')
-background = 'black'
-foreground= 'white'
-border_width = 25
+button1=Button(uygulama, text="Lahmacun\n49,90 TL", width=12, height=2, command=heasp, background=button_background, font=text_font)
+button1.grid(padx=11, pady=11)
+    
+button2=Button(uygulama, text="Cantık\n22,90 TL", width=12, height=2, command=heasp, background=button_background, font=text_font)
+button2.grid(padx=11, pady=11)
 
-label = Label(app_window, font=text_font, bg=background, fg=foreground, bd=border_width)
+button3=Button(uygulama, text="Pizza\n58,00 TL", width=12, height=2, command=heasp, background=button_background, font=text_font)
+button3.grid(padx=11, pady=11)
 
-label.grid(row=0, column=1)
+button4=Button(uygulama, text="Mantı\n31,69 TL", width=12, height=2, command=heasp, background=button_background, font=text_font)
+button4.grid(padx=11, pady=11)
 
+button5=Button(uygulama, text="Beef Wellington\n2999,99 TL", width=12, height=2, command=heasp, background=button_background, font=text_font)
+button5.grid(padx=11, pady=11)
 
-def digital_clock():
-    time_live = time.strftime("%H:%M:%S")
-    label.config(text=time_live)
-    label.after(200, digital_clock)
+button6=Button(uygulama, text="Siparişi\nTamamla", width=12, height=3, command=sepet, background=lastbutton_background, font=lastbutton_textfont)
+button6.grid(padx=150, pady=26)
 
-
-
-digital_clock()
-
-
-app_window.mainloop()
+pencere.mainloop()
