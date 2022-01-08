@@ -48,3 +48,6 @@ button6=Button(uygulama, text="Siparişi\nTamamla", width=12, height=3, command=
 button6.grid(padx=150, pady=26)
 
 pencere.mainloop()
+
+
+#Toplam fiyat sorununu çözemedim
