@@ -9,3 +9,7 @@ Emre Tetik 032080043
   - Kullandığım kütüphaneler : PyQt5 - sqlite3 - subprocess
   - Benim için pek ilgi çekici olmayan bir şey kodladığım için içime sinmedi ancak elimden gelen buydu.
 
+Oğuzhan Akar  032080025
+  - Tkinter kullanarak Öneri programı.py ve Not Defteri.py hazırladım. 2 adet csv dosyası Öneri programı.py e bağlı.
+  - kullandığım kütüphaneler: tkinter, pandas, random, numpy
+  
