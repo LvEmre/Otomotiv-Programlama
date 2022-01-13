@@ -12,4 +12,4 @@ Emre Tetik 032080043
 Oğuzhan Akar  032080025
   - Tkinter kullanarak Öneri programı.py ve Not Defteri.py hazırladım. 2 adet csv dosyası Öneri programı.py e bağlı.
   - kullandığım kütüphaneler: tkinter, pandas, random, numpy
-  
+  - Final projesinin amacı: 5 farklı gündelik uygulamanın tek bir arayüz içinde kullanıcıya sunulması.
