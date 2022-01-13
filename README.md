@@ -13,3 +13,8 @@ Oğuzhan Akar  032080025
   - Tkinter kullanarak Öneri programı.py ve Not Defteri.py hazırladım. 2 adet csv dosyası Öneri programı.py e bağlı.
   - kullandığım kütüphaneler: tkinter, pandas, random, numpy
   - Final projesinin amacı: 5 farklı gündelik uygulamanın tek bir arayüz içinde kullanıcıya sunulması.
+
+Eymen Pehlivan  032080039
+ - Tkinder kullanarak yemekapp.py ve tkinder ve time kullanarak saat3.py yaptım.
+ - saat3.py'yi zaman belirtmesi için saat 06.00 ile 18.00 arasında arka planı beyaz, geri kalan zaman aralığında arka planı siyah olacak şekilde hazırladım.
+ - Kullandığım kütüphaneler: tkinter, time
